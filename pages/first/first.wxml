@@ -20,26 +20,26 @@
     </swiper>
   </view>
 
-  <block wx:for="posts_content" wx:for-item="itemName">
+  <block wx:for="{{posts_content}}" wx:for-item="item">
     <view class='post'>
       <view class='post_header'>
         <image class='post_avatar'></image>
-        <text>{{itemName.date}}</text>
+        <text>{{item.date}}</text>
       </view>
       <view class='post_title'>
-        <text>{{itemName.title}}</text>
+        <text>{{item.title}}</text>
       </view>
       <view class='post_container'>
         <image class='post_container_img'></image>
       </view>
       <view class='post_container_text'>
-        <text>{{content}}</text>
+        <text>{{item.content}}</text>
       </view>
       <view class='post_footer'>
         <image class='post_footer_read'></image>
-        <text>{{read}}</text>
+        <text>{{item.read}}</text>
         <image class='post_footer_collection'></image>
-        <text>{{collection}}</text>
+        <text>{{item.collection}}</text>
       </view>
     </view>
   </block>

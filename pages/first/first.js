@@ -4,7 +4,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    
   },
 
   /**
@@ -26,7 +26,7 @@ Page({
         collection: "62"
       }
     ];
-    // this.setData(posts_content);
+    this.setData({posts_content});
   },
 
   /**
