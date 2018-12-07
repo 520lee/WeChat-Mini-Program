@@ -1,0 +1,76 @@
+/* 轮播图 */
+swiper{
+  width: 750rpx;
+  height: 480rpx;
+}
+swiper swiper-item view text{
+  color: white;
+}
+swiper swiper-item view{
+  width: 750rpx;
+  height: 480rpx;
+}
+.photo1{
+  background: skyblue;
+}
+.photo2{
+  background: rebeccapurple;
+}
+.photo3{
+  background: burlywood;
+}
+
+/* 新闻框架 */
+.post{
+  margin: 40rpx 0 0;
+  background: #999;
+  padding: 40rpx 0;
+}
+.post_header{
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 20rpx 40rpx;
+}
+.post_avatar{
+  width: 40rpx;
+  height: 40rpx;
+  background: #000;
+}
+.post_header>text{
+  color: #6a6a6a;
+  line-height: 40rpx;
+}
+.post_title>text{
+  font-weight: bold;
+  font-size: 52rpx;
+  margin-left: 40rpx;
+}
+.post_container_img{
+  width: 750rpx;
+  height: 300rpx;
+  background: skyblue;
+}
+.post_container_text{
+  font-size: 40rpx;
+  margin: 40rpx 20rpx;
+  width: 710rpx;
+}
+.post_footer{
+  display: flex;
+  flex-direction: row;
+}
+.post_footer_read{
+  width: 40rpx;
+  height: 40rpx;
+  background: burlywood;
+  margin-left: 20rpx;
+}
+.post_footer>text{
+  line-height: 40rpx;
+  margin-right: 40rpx;
+}
+.post_footer_collection{
+  width: 40rpx;
+  height: 40rpx;
+  background: burlywood;
+}

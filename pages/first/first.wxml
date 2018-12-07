@@ -1,0 +1,46 @@
+<!-- first.wxml -->
+<view class='container'>
+  <view>
+    <swiper autoplay='ture' interval='3000' indicator-dots="true">
+      <swiper-item>
+        <view class='photo1'>
+          <text>photo1</text>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class='photo2'>
+          <text>photo2</text>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class='photo3'>
+          <text>photo3</text>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <block wx:for="posts_content" wx:for-item="itemName">
+    <view class='post'>
+      <view class='post_header'>
+        <image class='post_avatar'></image>
+        <text>{{itemName.date}}</text>
+      </view>
+      <view class='post_title'>
+        <text>{{itemName.title}}</text>
+      </view>
+      <view class='post_container'>
+        <image class='post_container_img'></image>
+      </view>
+      <view class='post_container_text'>
+        <text>{{content}}</text>
+      </view>
+      <view class='post_footer'>
+        <image class='post_footer_read'></image>
+        <text>{{read}}</text>
+        <image class='post_footer_collection'></image>
+        <text>{{collection}}</text>
+      </view>
+    </view>
+  </block>
+</view>
